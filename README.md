@@ -8,7 +8,8 @@ Within your repo create a file called `.github/workflows/ci.yaml` with the follo
 
 ```yaml
 on:
-  push: ["main"]
+  push: 
+    branches: ["main"]
 jobs:
   lint-and-test:
     uses: PiBrewing/workflows/.github/workflows/ci-python.yaml
